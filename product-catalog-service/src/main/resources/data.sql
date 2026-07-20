@@ -1,0 +1,11 @@
+-- Seed data for Product Catalog
+INSERT INTO products (id, name, description, price, stock_quantity, category, image_url, flash_sale, flash_sale_price, is_active, created_at, updated_at)
+VALUES
+    (gen_random_uuid(), 'Wireless Noise-Cancelling Headphones', 'Premium over-ear headphones with active noise cancellation, 30-hour battery life, and hi-res audio support.', 349.99, 150, 'Electronics', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400', false, null, true, NOW(), NOW()),
+    (gen_random_uuid(), 'Ergonomic Mechanical Keyboard', 'Hot-swappable switches, RGB backlighting, and a split design for maximum typing comfort.', 189.99, 85, 'Electronics', 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400', false, null, true, NOW(), NOW()),
+    (gen_random_uuid(), 'Ultra-Slim Laptop Stand', 'Adjustable aluminum laptop stand with ventilation holes for optimal airflow.', 49.99, 300, 'Accessories', 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400', true, 29.99, true, NOW(), NOW()),
+    (gen_random_uuid(), '4K Ultra HD Monitor 27"', 'IPS panel, 144Hz refresh rate, HDR10 support, and USB-C connectivity.', 599.99, 45, 'Electronics', 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400', false, null, true, NOW(), NOW()),
+    (gen_random_uuid(), 'Premium Leather Backpack', 'Full-grain leather backpack with padded laptop compartment and USB charging port.', 129.99, 200, 'Accessories', 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400', true, 79.99, true, NOW(), NOW()),
+    (gen_random_uuid(), 'Smart Fitness Tracker', 'Heart rate monitor, sleep tracking, GPS, and 7-day battery life. Water resistant to 50m.', 199.99, 120, 'Electronics', 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400', false, null, true, NOW(), NOW()),
+    (gen_random_uuid(), 'Portable Bluetooth Speaker', '360-degree sound, IP67 waterproof, 24-hour playtime, and built-in microphone.', 79.99, 250, 'Electronics', 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400', true, 49.99, true, NOW(), NOW()),
+    (gen_random_uuid(), 'Minimalist Desk Lamp', 'Touch-sensitive dimming, wireless phone charging base, and adjustable color temperature.', 69.99, 180, 'Home', 'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?w=400', false, null, true, NOW(), NOW());
